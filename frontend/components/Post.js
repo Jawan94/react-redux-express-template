@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {toggleModalAction, toggleSaveUser} from '../actions/index'
 
-class SubmitPost extends React.Component {
+class Post extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -25,7 +25,7 @@ class SubmitPost extends React.Component {
 }
 };
 
-SubmitPost.propTypes = {
+Post.propTypes = {
     name: PropTypes.string,
 };
 
@@ -49,4 +49,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(SubmitPost);
+)(Post);
